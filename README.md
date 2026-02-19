@@ -1,1 +1,1 @@
-# ubuntu-server-init
+# host-init
