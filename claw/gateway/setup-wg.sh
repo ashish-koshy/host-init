@@ -7,7 +7,7 @@ source "/app/common/wg_utils.sh"
 # Configuration
 # --------------------------------------------------------------------
 WG_CONF="/etc/wireguard/wg0.conf"
-LOCAL_IP="10.10.0.2/24"
+LOCAL_IP="10.10.0.3/24"
 
 # --------------------------------------------------------------------
 # Setup the WireGuard interface
