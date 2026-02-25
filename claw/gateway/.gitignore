@@ -1,0 +1,15 @@
+# Sensitive files - DO NOT COMMIT
+wg0.conf
+*.key
+
+# Docker volumes
+captures/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment files
+.env
+.docker

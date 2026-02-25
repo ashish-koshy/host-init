@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = <claw-private-key>
+
+[Peer]
+PublicKey = ikjzU/uwL76wM3whWcPbYIR9e2cRx8qY/+HbN3v3D1E=
+PresharedKey = <claw-preshared-key>
+Endpoint = localhost:51000
+AllowedIPs = 10.10.0.0/24
+PersistentKeepalive = 15
