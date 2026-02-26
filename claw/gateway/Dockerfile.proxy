@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx-claw.conf /etc/nginx/conf.d/nginx-claw.conf
+COPY claw/gateway/nginx.conf /etc/nginx/nginx.conf
+COPY claw/gateway/nginx-claw.conf /etc/nginx/conf.d/nginx-claw.conf
 EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
