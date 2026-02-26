@@ -16,3 +16,11 @@ services:
       interval: 60s
       timeout: 5s
       retries: 5
+
+  nginx-proxy:
+    build:
+      context: ../../
+      dockerfile: claw/gateway/Dockerfile.proxy
+    container_name: nginx-proxy
+    network_mode: host
+    restart: unless-stopped

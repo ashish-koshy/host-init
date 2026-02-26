@@ -19,7 +19,7 @@ wg_setup_interface "$WG_CONF" "$LOCAL_IP"
 # --------------------------------------------------------------------
 wg_setup_nat eth0
 iptables -t nat -A PREROUTING -i wg0 -p tcp --dport 22 -j DNAT --to-destination "$(wg_get_host_ip):22"
-iptables -t nat -A PREROUTING -i wg0 -p tcp --dport 18789 -j DNAT --to-destination "$(wg_get_host_ip):18789"
+iptables -t nat -A PREROUTING -i wg0 -p tcp --dport 8080 -j DNAT --to-destination "$(wg_get_host_ip):8080"
 
 echo "Gateway operational. Host: $(wg_get_host_ip)"
 
